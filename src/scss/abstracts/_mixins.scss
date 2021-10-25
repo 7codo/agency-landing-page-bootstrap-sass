@@ -1,0 +1,16 @@
+/*Setting background image*/
+@mixin bg-image($urlstr) {
+  background-image: url($urlstr);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position: center center;
+}
+
+/*Vendor Prefix*/
+@mixin vendorPrfx($pname, $pvalue) {
+  #{$pname}: #{$pvalue};
+  -webkit-#{$pname}: #{$pvalue};
+  -moz-#{$pname}: #{$pvalue};
+  -ms-#{$pname}: #{$pvalue};
+  -o-#{$pname}: #{$pvalue};
+}
