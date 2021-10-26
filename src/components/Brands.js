@@ -81,7 +81,7 @@ function Brands() {
             const { id, alt, source } = brandIcon;
             return (
               <Col xs={12} sm={6} md key={id}>
-                <div class="h-100 d-flex align-items-center justify-content-center">
+                <div className="h-100 d-flex align-items-center justify-content-center">
                   <Image src={source} alt={alt} />
                 </div>
               </Col>
